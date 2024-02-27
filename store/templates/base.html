@@ -11,6 +11,10 @@
     />
     <!-- Custom StyleSheet -->
     <link rel="stylesheet" href="{%static 'css/styles.css'%}" />
+
+    {%block link_block%}
+
+    {%endblock%}
     <title>Boy’s T-Shirt</title>
   </head>
 
@@ -28,7 +32,7 @@
     </div>
     <div class="navigation">
       <div class="nav-center container d-flex">
-        <a href="index.html" class="logo"><h1>Dans</h1></a>
+        <a href="index.html" class="logo"><h1>Trend-Factory</h1></a>
 
         <ul class="nav-list d-flex">
           <li class="nav-item">
@@ -120,8 +124,9 @@
     </footer>
     <!-- Custom Script -->
     <script src="{%static 'js/index.js'%}"></script>
-    {%block script_block%}
-
-    {%endblock%}
+   
   </body>
+  {%block script_block%}
+
+  {%endblock%}
 </html>
