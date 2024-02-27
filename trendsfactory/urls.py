@@ -25,5 +25,6 @@ urlpatterns = [
     path('register/',views.SignupView.as_view(), name='signup'),
     path('',views.SigninView.as_view(), name='signin'),
     path('index/',views.IndexView.as_view(), name='index'),
-    path('product/<int:pk>/',views.ProductDetailView.as_view(), name='productdetails'),
+    path('product/<int:pk>/',views.ProductDetailView.as_view(), name='product-details'),
+    path('home/',views.HomeView.as_view(),name='home')
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
